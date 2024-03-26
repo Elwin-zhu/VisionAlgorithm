@@ -195,7 +195,7 @@ int main(int argc, const char** argv)
             diff_cdf[i][j] = fabs(hist1_cdf[i] - hist2_cdf[j]);
         }
     }
-    //3.生成LUT映射表
+    //3.生成LUT映射表，LUT: Look Up Table, 查找表，也称色彩表、色彩图、，索引记录和调色板的连接。
     cv::Mat lut(1, 256, CV_8U);
     for (int i = 0; i < 256; i++)
     {
